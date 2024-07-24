@@ -20,7 +20,7 @@ const Otp = () => {
         if (val.length > 1) val = val.substring(val.length - 1);
         let data = OTP;
 
-        if (val == "Backspace" || val == "Delete") {
+        if (val == " " || !val ||val == "Delete") {
             data[index] = "";
             setOTP(() => [...data]);
             if (index > 0) ref.current[index - 1].focus();
