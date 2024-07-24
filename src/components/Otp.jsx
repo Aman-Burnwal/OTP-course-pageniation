@@ -16,7 +16,8 @@ const Otp = () => {
 
     const otpFiller = (e, index) => {
 
-        const val = e.key;
+        let val = e.target.value;
+        if (val.length > 1) val = val.substring(val.length - 1);
         let data = OTP;
 
         if (val == "Backspace" || val == "Delete") {
@@ -87,7 +88,7 @@ const Otp = () => {
                                                 input
                                                 key={index}
                                                 ref={(current) => ref.current[index] = current}
-                                                onKeyDown={(e) => otpFiller(e, index)}
+                                                onChange = {(e) => otpFiller(e, index)}
                                                 value={val}
                                                 className={`h-20 w-20 bg-[#DBE2EF] rounded-lg border font-semibold text-4xl text-center 
                           ${clicked ? (isVerified ? 'border-[#23CF9B]' : 'border-[#EB2D5B]') : ''}`
