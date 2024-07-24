@@ -1,11 +1,17 @@
-# React + Vite
+### React + Vite
 
-# use bun install to install dependencies
+## use ```bun install``` to install dependencies
 
-###  Trree 
-- header
-- container 
-    - paragraph
-    - 
+##  Routes
+
+ 
+
+| Path | Page |
+|---|---|
+| / | Default page || OTP validator page |
+| /courses | Courses page |
+| /pagination | Pagination page |
+
+
 
 
