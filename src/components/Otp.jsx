@@ -91,7 +91,7 @@ const Otp = () => {
                                                 onChange = {(e) => otpFiller(e, index)}
                                                 value={val}
                                                 className={`h-20 w-20 bg-[#DBE2EF] rounded-lg border font-semibold text-4xl text-center 
-                          ${clicked ? (isVerified ? 'border-[#23CF9B]' : 'border-[#EB2D5B]') : ''}`
+                                                        ${clicked ? (isVerified ? 'border-[#23CF9B]' : 'border-[#EB2D5B]') : ''}`
                                                 }
 
                                                 type="text"
