@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Otp from "./components/Otp"
 import CourseCard from "./components/CourseCard"
+import Pagination from "./components/Pagination"
 
 
 
@@ -14,6 +15,10 @@ const App = () => {
     {
       path: "/courses",
       element: <CourseCard />
+    }
+    , {
+      path: "/pagination",
+      element : <Pagination />
     }
   ])
   
